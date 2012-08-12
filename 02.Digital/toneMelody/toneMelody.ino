@@ -8,7 +8,9 @@
  
  created 21 Jan 2010
  modified 30 Aug 2011
- by Tom Igoe 
+ by Tom Igoe
+ modified again 11 Aug 2011
+ by Pearl Chen
 
 This example code is in the public domain.
  

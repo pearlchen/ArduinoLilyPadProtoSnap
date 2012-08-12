@@ -1,7 +1,7 @@
 /*
  Fade
  
- This example shows how to fade an redLed on pin 9
+ This example shows how to fade a RGB LED on pins 9-11 
  using the analogWrite() function.
  
  This example code is in the public domain.
@@ -11,12 +11,12 @@ int redLed = 9;        // the pin that the led rgb pins are attached to
 int blueLed = 10;
 int greenLed = 11;
 
-int brightness = 0;    // how bright the redLed is
-int fadeAmount = 5;    // how many points to fade the redLed by
+int brightness = 0;    // how bright the led is
+int fadeAmount = 5;    // how many points to fade the led by
 
 // the setup routine runs once when you press reset:
 void setup()  { 
-  // declare led pins to be an output:
+  // declare all led pins to be an output:
   pinMode(redLed, OUTPUT);
   pinMode(blueLed, OUTPUT);
   pinMode(greenLed, OUTPUT);

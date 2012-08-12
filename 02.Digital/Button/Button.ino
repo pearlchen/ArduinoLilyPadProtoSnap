@@ -1,27 +1,18 @@
 /*
   Button
  
- Turns on and off a light emitting diode(LED) connected to digital  
- pin 13, when pressing a pushbutton attached to pin A5. 
- 
- 
- The circuit:
- * LED attached from pin 13 to ground 
- * pushbutton attached to pin 2 from +5V
- * 10K resistor attached to pin 2 from ground
- 
- * Note: on most Arduinos there is already an LED on the board
- attached to pin 13.
- 
- 
+ Turns on and off a LED connected to digitalvpin 5, 
+ when pressing the LilyPad ProtoSnap pushbutton 
+ attached to pin A5. 
+  
  created 2005
  by DojoDave <http://www.0j0.org>
  modified 30 Aug 2011
  by Tom Igoe
+ modified again 11 Aug 2012
+ by Pearl Chen
  
  This example code is in the public domain.
- 
- http://www.arduino.cc/en/Tutorial/Button
  */
 
 // constants won't change. They're used here to 
@@ -39,7 +30,10 @@ void setup() {
   
   // initialize the pushbutton pin as an input:
   pinMode(buttonPin, INPUT);
-  // due to where it's wired on the LilyPad ProtoSnap, need to set pullup resistor
+  // due to where the button is wired on the LilyPad ProtoSnap, 
+  // we need to enable a built-in "pullup resistor" on the same pin,
+  // otherwise button presses are erratic and even trigger when the
+  // board is flexed.
   digitalWrite(buttonPin, HIGH);
   
 }
