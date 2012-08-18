@@ -1,6 +1,5 @@
 /*
-  Melody
- 
+ Sketch "toneMelody":
  Plays a melody 
  
  circuit:
@@ -19,7 +18,8 @@ This example code is in the public domain.
  */
  #include "pitches.h"
 
-const int speakerPin =  7;        // the number of the speaker pin
+// the number of the buzzer/speaker pin
+const int speakerPin =  7;
 
 // notes in the melody:
 int melody[] = {
@@ -30,6 +30,7 @@ int noteDurations[] = {
   4, 8, 8, 4,4,4,4,4 };
 
 void setup() {
+  
   // iterate over the notes of the melody:
   for (int thisNote = 0; thisNote < 8; thisNote++) {
 

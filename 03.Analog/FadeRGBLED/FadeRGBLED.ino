@@ -1,13 +1,14 @@
 /*
- Fade
- 
- This example shows how to fade a RGB LED on pins 9-11 
+ Sketch "FadeRGBLED":
+ Fade a RGB LED on which is connected to pins: 9 (red), 10 (green), and 11 (blue) 
  using the analogWrite() function.
  
+ Modified by: Pearl Chen
  This example code is in the public domain.
  */
 
-int redLed = 9;        // the pin that the led rgb pins are attached to
+// the pins that the led rgb pins are attached to
+int redLed = 9;        
 int blueLed = 10;
 int greenLed = 11;
 
